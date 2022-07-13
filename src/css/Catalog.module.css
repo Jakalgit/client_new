@@ -1,0 +1,204 @@
+/* Стиль инпутов */
+html,
+body {
+    background-color: #fff;
+    font-family: 'Rubik', sans-serif;
+    font-size: 10px;
+    min-width: 320px;
+}
+
+/* Поисковая строка */
+.find_block {
+    margin-top: 10rem;
+}
+
+.find_line {
+    margin-top: 3rem;
+    height: 9rem;
+    border-radius: 4.5rem;
+    border-style: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+.search {
+    height: 9rem;
+    border-top-left-radius: 4.5rem;
+    border-bottom-left-radius: 4.5rem;
+    border-style: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    padding-left: 4.5rem;
+}
+.search:focus {
+    outline: none;
+}
+.find {
+    height: 9rem;
+    border-top-right-radius: 4.5rem;
+    border-bottom-right-radius: 4.5rem;
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    background-color: #0048D0;
+    color: #fff;
+    border-style: none;
+    transition: all 0.2s;
+}
+.find:hover {
+    background-color: #0B5BF2;
+}
+/* Поиск запчастей */
+.find_parts {
+    height: 6rem;
+    border-radius: 3rem;
+    border-style: none;
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    transition: all 0.25s;
+}
+.find_parts:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.info_filter {
+    height: 7rem;
+    margin-top: 4rem;
+    display: flex;
+}
+.info {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+}
+
+.empty_text {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+
+    font-size: 4.5rem;
+
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+}
+
+.page {
+    margin-top: 5rem;
+}
+
+@media (max-width: 991px) {
+    .find_parts {
+        font-size: 1.8rem;
+        height: 5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .find_line {
+        height: 7rem;
+        border-radius: 3.5rem;
+    }
+    .search {
+        height: 7rem;
+        border-top-left-radius: 3.5rem;
+        border-bottom-left-radius: 3.5rem;
+        font-size: 2.1rem;
+        padding-left: 3.5rem;
+    }
+    .find {
+        height: 7rem;
+        border-top-right-radius: 3.5rem;
+        border-bottom-right-radius: 3.5rem;
+        font-size: 2.6rem;
+    }
+
+    .info {
+        font-size: 1.6rem;
+    }
+
+    .empty_text {
+        font-size: 4.1rem;
+
+        margin-top: 15rem;
+        margin-bottom: 15rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .info {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 430px) {
+    /* Поисковая строка */
+    .find_line {
+        height: 6rem;
+        border-radius: 3rem;
+    }
+    .search {
+        height: 6rem;
+        border-top-left-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+        font-size: 1.7rem;
+        padding-left: 3rem;
+    }
+    .find {
+        height: 6rem;
+        border-top-right-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+        font-size: 2.1rem;
+    }
+    .find_parts {
+        font-size: 1.5rem;
+        height: 4rem;
+    }
+
+    .info {
+        font-size: 1.2rem;
+    }
+
+    .empty_text {
+        font-size: 3.6rem;
+
+        margin-top: 12rem;
+        margin-bottom: 12rem;
+    }
+}
+
+@media (max-width: 360px) {
+    /* Поисковая строка */
+    .find_line {
+        height: 5rem;
+        border-radius: 2.5rem;
+    }
+    .search {
+        height: 5rem;
+        border-top-left-radius: 2.5rem;
+        border-bottom-left-radius: 2.5rem;
+        font-size: 1.2rem;
+        padding-left: 3rem;
+    }
+    .find {
+        height: 5rem;
+        border-top-right-radius: 2.5rem;
+        border-bottom-right-radius: 2.5rem;
+        font-size: 1.6rem;
+    }
+    .find_parts {
+        font-size: 1.3rem;
+    }
+
+    .info {
+        font-size: 1rem;
+    }
+
+    .empty_text {
+        font-size: 3.2rem;
+
+        margin-top: 12rem;
+        margin-bottom: 12rem;
+    }
+}

@@ -1,0 +1,255 @@
+html, body {
+    background-color: #fff;
+    font-size: 10px;
+    min-width: 320px
+}
+@keyframes out-fade {
+    0% {
+        opacity: 0;
+        transform: translateY(-2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+/*  Фильтры */
+.filters {
+    margin-top: 20rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.up_line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.clean {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    margin-left: 1rem;
+    border-style: none;
+    border-radius: 3rem;
+    background-color: #D50000;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.clean_img {
+    height: 3rem;
+    width: 3rem;
+}
+.filters_text {
+    font-size: 4.5rem;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+
+    transition: all 0.2s;
+}
+.checkbox:checked {
+    background-color: #00FF38;
+}
+.checkbox:hover {
+    cursor: pointer;
+}
+.availability {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.checkbox_text {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    margin-left: 1rem;
+    margin-bottom: 0;
+}
+.bar {
+    height: 6rem;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+}
+.bar:hover {
+    cursor: pointer;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.help_bar {
+    position: relative;
+    padding: 0;
+}
+.help_bar:hover .bar {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.name_bar {
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.dropdown_list {
+    height: 15.5rem;
+    display: none;
+    position: absolute;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+    overflow: auto;
+    background-color: #fff;
+    animation: out-fade 0.2s forwards;
+}
+.type_bar:hover .type_list {
+    display: block;
+}
+.brand_bar:hover .brand_list {
+    display: block;
+}
+.model_bar:hover .model_list {
+    display: block;
+}
+/* Стиль элемнтов списка */
+.bar_list_item {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    background-color: #fff;
+    border-style: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    transition: all 0.2s;
+}
+.bar_list_item:hover {
+    background-color: #0048D0;
+    color: #fff;
+}
+
+@media (max-width: 1199px) {
+    .clean {
+        margin-left: 5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .clean {
+        margin-left: 0rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .up_line {
+        margin-bottom: 3rem;
+    }
+    .filters_text {
+        font-size: 4rem;
+    }
+    .clean {
+        height: 4rem;
+        width: 4rem;
+        margin-left: 1rem;
+    }
+    .clean_img {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+    .section_color {
+        margin-top: 5rem;
+        height: 13rem;
+    }
+    .bar {
+        height: 5rem;
+    }
+    .name_bar {
+        font-size: 1.9rem;
+    }
+    /* Стиль элемнтов списка */
+    .bar_list_item {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .filters_text {
+        font-size: 3rem;
+    }
+    .clean {
+        height: 3.7rem;
+        width: 3.7rem;
+        margin-left: 0rem;
+    }
+    .clean_img {
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+    .bar {
+        height: 4rem;
+    }
+    .item {
+        margin-top: 8rem;
+    }
+    .name_bar {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+    .bar_list_item {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .clean {
+        height: 3.4rem;
+        width: 3.4rem;
+        margin-left: 2rem;
+    }
+    .clean_img {
+        width: 1.9rem;
+        height: 1.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .filters_text {
+        font-size: 2.5rem;
+    }
+    .clean {
+        height: 3rem;
+        width: 3rem;
+        margin-left: 2rem;
+    }
+    .clean_img {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+    .bar {
+        height: 3rem;
+    }
+    .name_bar {
+        font-size: 1.1rem;
+    }
+    /* Стиль элемнтов списка */
+    .bar_list_item {
+        font-size: 1rem;
+    }
+}

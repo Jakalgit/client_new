@@ -1,0 +1,255 @@
+/* Общие */
+.item_section {
+    height: 100%;
+}
+.create_item {
+    margin-top: 10vh;
+}
+/* Блоки с категориями, подкатегориями, брэндами */
+.current_block {
+    height: 30rem;
+    border-style: solid;
+    border-width: 0.4rem;
+    border-radius: 1.5rem;
+    overflow: auto;
+}
+.current_txt {
+    font-size: 2.7rem;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+.select_item {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.1rem;
+    text-align: center;
+    border-style: none;
+    background-color: #fff;
+}
+/* Инпуты */
+.input_name {
+    height: 5rem;
+    margin-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 2.1rem;
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1rem;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+}
+.input_price {
+    height: 5rem;
+    margin-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 2.1rem;
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1rem;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+.input_info {
+    height: 13rem;
+    margin-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 2.1rem;
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1rem;
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+}
+.input_img {
+    display: none;
+}
+.label_img {
+    height: 5rem;
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: rgba(0, 0, 0, 0.8);
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    transition: all 0.2s;
+    background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+.label_img:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.label_img:hover .label_txt {
+    color: #fff;
+}
+.label_txt {
+    font-size: 1.6rem;
+    margin-top: 2.5rem;
+    transform: translateY(-65%);
+    transition: all 0.2s;
+    font-family: 'Montserrat', sans-serif;
+}
+.remove_img {
+    border-radius: 1rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+.add_info {
+    font-size: 2.1rem;
+    margin-top: 2rem;
+    font-family: 'Raleway', sans-serif;
+    background-color: #fff;
+    height: 7rem;
+    border-bottom-style: solid;
+    border-radius: 1rem;
+    border-width: 0.3rem;
+    transition: all 0.2s;
+}
+.add_info:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+.img_name {
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'Raleway', sans-serif;
+}
+.image_name {
+    height: 2rem;
+}
+/* Наличие */
+.availability {
+    align-items: center;
+    margin-top: 2rem;
+    height: 4rem;
+}
+.radio_ava {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid  #424242;
+    transition: 0.1s all linear;
+}
+.radio_ava:checked {
+    background-color: #424242;
+}
+.radio_ava:hover {
+    cursor: pointer;
+}
+.radio_text {
+    display: inline-block;
+    font-size: 2.1rem;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 0;
+    margin-left: 0.5rem;
+}
+.ava {
+    display: inline-flex;
+    align-items: center;
+}
+/* Кнопка добавить */
+.add_item {
+    margin-top: 3rem;
+    height: 7rem;
+    background-color: #00C853;
+    border-style: none;
+    border-radius: 1.5rem;
+    font-size: 2.4rem;
+    transition: all 0.2s;
+    font-family: 'Raleway', sans-serif;
+}
+.add_item:hover {
+    background-color: #00E05D;
+}
+.empty {
+    display: inline-block;
+    margin-top: 45vh;
+    margin-left: 50%;
+    font-size: 4rem;
+    transform: translateX(-50%);
+    text-align: center;
+}
+@media (max-width: 1199px) {
+    .radio_text {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 991px) {
+    .current_txt {
+        font-size: 2.4rem;
+    }
+    .select_item {
+        font-size: 1.8rem;
+    }
+    .input_name {
+        font-size: 1.8rem;
+    }
+    .input_price {
+        font-size: 1.8rem;
+    }
+    .input_info {
+        font-size: 1.8rem;
+    }
+    .label_txt {
+        font-size: 1.4rem;
+    }
+    .add_item {
+        font-size: 2.1rem;
+    }
+}
+@media (max-width: 767px) {
+    .current_txt {
+        font-size: 2.1rem;
+    }
+    .current_block {
+        height: 25rem;
+    }
+    .select_item {
+        font-size: 1.5rem;
+    }
+    .input_name {
+        font-size: 1.3rem;
+    }
+    .input_price {
+        font-size: 1.3rem;
+    }
+    .input_info {
+        font-size: 1.5rem;
+    }
+    .label_txt {
+        font-size: 1.5rem;
+    }
+    .radio_text {
+        font-size: 1.5rem;
+    }
+    .radio_ava {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .add_item {
+        font-size: 1.7rem;
+    }
+}
+@media (max-width: 575px) {
+    .current_txt {
+        font-size: 2.1rem;
+        margin-top: 2rem;
+    }
+    .current_block {
+        height: 15rem;
+    }
+    .add_item {
+        margin-bottom: 2rem;
+    }
+}

@@ -1,0 +1,340 @@
+html,
+body {
+    background-color: #fff;
+    font-size: 10px;
+    min-width: 320px;
+}
+/* Поисковая строка */
+.find_block {
+    margin-top: 10rem;
+}
+.find_line {
+    margin-top: 3rem;
+    height: 9rem;
+    border-radius: 4.5rem;
+    border-style: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+.search {
+    height: 9rem;
+    border-top-left-radius: 4.5rem;
+    border-bottom-left-radius: 4.5rem;
+    border-style: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    padding-left: 4.5rem;
+}
+.search:focus {
+    outline: none;
+}
+.find {
+    height: 9rem;
+    border-top-right-radius: 4.5rem;
+    border-bottom-right-radius: 4.5rem;
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    background-color: #0048D0;
+    color: #fff;
+    border-style: none;
+    transition: all 0.2s;
+}
+.find:hover {
+    background-color: #0B5BF2;
+}
+/* Поиск запчастей */
+.find_parts {
+    height: 6rem;
+    border-radius: 3rem;
+    border-style: none;
+    margin-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    transition: all 0.25s;
+}
+.find_parts:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+/* Текст "Добро пожаловать!" */
+.welcome_text {
+    font-size: 7.5rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25rem;
+    margin-bottom: 25rem;
+}
+/* Блоки Landing */
+.block_model {
+    display: flex;
+    margin-top: 10rem;
+    align-items: center;
+}
+.des_text {
+    min-height: 3rem;
+}
+.head_text {
+    font-size: 4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.down_text {
+    font-size: 3rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 12rem;
+}
+.img_div {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.img_div:hover .check {
+    cursor: pointer;
+    opacity: 1;
+}
+.img_div:hover .image {
+    filter: blur(5px);
+}
+.image {
+    height: 54rem;
+    width: 54rem;
+    transition: all 0.5s;
+}
+.image:hover {
+    filter: blur(10px);
+    cursor: pointer;
+}
+.check {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-size: 5rem;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.5s ease;
+    color: #fff;
+    border-style: none;
+}
+/* Ссылка на каталог */
+.text_catalog {
+    margin-top: 10rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+}
+.href {
+    display: inline-block;
+    color: #0048D0;
+}
+.phone_number {
+    margin-top: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.5rem;
+    text-align: center;
+}
+@media (max-width: 1199px) {
+    .image {
+        height: 47rem;
+        width: 47rem;
+    }
+    .head_text {
+        font-size: 3.7rem;
+    }
+    .down_text {
+        font-size: 2.5rem;
+    }
+    .text_catalog {
+        font-size: 3.1rem;
+    }
+    .phone_number {
+        font-size: 4.1rem;
+    }
+}
+@media (max-width: 991px) {
+    .find_parts {
+        font-size: 1.8rem;
+        height: 5rem;
+    }
+    .welcome_text {
+        font-size: 6.5rem;
+        margin-top: 17rem;
+        margin-bottom: 7rem;
+    }
+    .image {
+        height: 38rem;
+        width: 38rem;
+    }
+    .check {
+        font-size: 4rem;
+    }
+    .head_text {
+        font-size: 3.3rem;
+    }
+    .down_text {
+        font-size: 2.1rem;
+        margin-top: 8rem;
+    }
+}
+@media (max-width: 767px) {
+    .find_line {
+        height: 7rem;
+        border-radius: 3.5rem;
+    }
+    .search {
+        height: 7rem;
+        border-top-left-radius: 3.5rem;
+        border-bottom-left-radius: 3.5rem;
+        font-size: 2.1rem;
+        padding-left: 3.5rem;
+    }
+    .find {
+        height: 7rem;
+        border-top-right-radius: 3.5rem;
+        border-bottom-right-radius: 3.5rem;
+        font-size: 2.6rem;
+    }
+    .welcome_text {
+        font-size: 5rem;
+    }
+    .image {
+        height: 30rem;
+        width: 30rem;
+    }
+    .check {
+        font-size: 3.5rem;
+    }
+    .head_text {
+        font-size: 3rem;
+    }
+    .down_text {
+        font-size: 1.6rem;
+        margin-top: 5rem;
+    }
+    .text_catalog {
+        font-size: 2.7rem;
+        margin-top: 7rem;
+    }
+    .phone_number {
+        font-size: 3.7rem;
+        margin-top: 2rem;
+    }
+}
+@media (max-width: 575px) {
+    .welcome_text {
+        font-size: 4rem;
+    }
+    .image {
+        height: 22rem;
+        width: 22rem;
+    }
+    .check {
+        font-size: 3.1rem;
+    }
+    .head_text {
+        font-size: 2.7rem;
+    }
+    .down_text {
+        font-size: 1.3rem;
+        margin-top: 4.5rem;
+    }
+    .text_catalog {
+        font-size: 2.2rem;
+    }
+    .phone_number {
+        font-size: 3rem;
+    }
+}
+@media (max-width: 430px) {
+    .find_line {
+        height: 6rem;
+        border-radius: 3rem;
+    }
+    .search {
+        height: 6rem;
+        border-top-left-radius: 3rem;
+        border-bottom-left-radius: 3rem;
+        font-size: 1.7rem;
+        padding-left: 3rem;
+    }
+    .find {
+        height: 6rem;
+        border-top-right-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+        font-size: 1.9rem;
+    }
+    .welcome_text {
+        font-size: 3rem;
+        margin-top: 14rem;
+        margin-bottom: 4rem;
+    }
+    .find_parts {
+        font-size: 1.5rem;
+        height: 4rem;
+    }
+    .image {
+        height: 17rem;
+        width: 17rem;
+    }
+    .check {
+        font-size: 2.5rem;
+    }
+    .head_text {
+        font-size: 2.3rem;
+    }
+    .down_text {
+        font-size: 1.1rem;
+        margin-top: 3.5rem;
+    }
+    .text_catalog {
+        font-size: 1.7rem;
+    }
+    .phone_number {
+        font-size: 2.6rem;
+    }
+}
+@media (max-width: 360px) {
+    .find_line {
+        height: 5rem;
+        border-radius: 2.5rem;
+    }
+    .search {
+        height: 5rem;
+        border-top-left-radius: 2.5rem;
+        border-bottom-left-radius: 2.5rem;
+        font-size: 1.2rem;
+        padding-left: 3rem;
+    }
+    .find {
+        height: 5rem;
+        border-top-right-radius: 2.5rem;
+        border-bottom-right-radius: 2.5rem;
+        font-size: 1.6rem;
+    }
+    .welcome_text {
+        font-size: 2.6rem;
+        margin-top: 10rem;
+        margin-bottom: 4rem;
+    }
+    .find_parts {
+        font-size: 1.3rem;
+    }
+    .image {
+        height: 14rem;
+        width: 14rem;
+    }
+    .check {
+        font-size: 2.1rem;
+    }
+    .head_text {
+        font-size: 1.9rem;
+    }
+    .down_text {
+        font-size: 0.9rem;
+        margin-top: 3rem;
+    }
+}

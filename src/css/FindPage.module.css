@@ -1,0 +1,56 @@
+/* Стиль инпутов */
+.input {
+    font-size: 2.7rem;
+    background-color: #fff;
+    color: #404040;
+    height: 5rem;
+    padding-left: 0.5rem;
+    border-radius: 0.3rem;
+    border-color: #4F4F4F;
+    border-width: 0 0 0 0;
+    transition: all 0.4s;
+}
+.input:focus {
+    border-color: #404040;
+    outline: none;
+}
+.input::placeholder {
+    color: #B9B9B9;
+}
+.find {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+}
+.find_img {
+    height: 4rem;
+    width: 4rem;
+}
+.find_img:hover {
+    cursor: pointer;
+}
+
+.catalog {
+    margin-top: 10rem;
+}
+
+.spinner {
+    margin-top: 50vh;
+    margin-left: 50%;
+}
+
+@media (max-width: 991px) {
+    .input {
+        font-size: 2.4rem;
+    }
+}
+@media (max-width: 767px) {
+    .input {
+        font-size: 2rem;
+    }
+    .find_img {
+        height: 3rem;
+        width: 3rem;
+    }
+}
